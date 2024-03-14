@@ -2,35 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(gdb) Windows 上的 Bash 启动",
-      "type": "cppdbg",
+      "name": "(Windows) 启动",
+      "type": "cppvsdbg",
       "request": "launch",
       "program": "输入程序名称，例如 ${workspaceFolder}/a.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "environment": [],
-      "externalConsole": false,
-      "pipeTransport": {
-        "debuggerPath": "/usr/bin/gdb",
-        "pipeProgram": "${env:windir}\\system32\\bash.exe",
-        "pipeArgs": [
-          "-c"
-        ],
-        "pipeCwd": ""
-      },
-      "setupCommands": [
-        {
-          "description": "为 gdb 启用整齐打印",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        },
-        {
-          "description": "将反汇编风格设置为 Intel",
-          "text": "-gdb-set disassembly-flavor intel",
-          "ignoreFailures": true
-        }
-      ]
+      "console": "externalTerminal"
     },
     {
       "name": "C/C++ Runner: Debug Session",
@@ -39,8 +19,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Cave_man/Desktop/NHT",
-      "program": "c:/Users/Cave_man/Desktop/NHT/build/Debug/outDebug",
+      "cwd": "c:/Users/Cave_man/Desktop/NHT/BTCS",
+      "program": "c:/Users/Cave_man/Desktop/NHT/BTCS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
