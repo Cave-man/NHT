@@ -19,8 +19,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Cave_man/Desktop/NHT/BTCS",
-      "program": "c:/Users/Cave_man/Desktop/NHT/BTCS/build/Debug/outDebug",
+      "cwd": "c:/Users/Cave_man/Desktop/NHT",
+      "program": "c:/Users/Cave_man/Desktop/NHT/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
