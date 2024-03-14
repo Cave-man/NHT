@@ -68,7 +68,7 @@ for(i=2;i<=M-1;i++)
 }
 
 std::ofstream outfile("CNCS.txt");
-for (i=M-1;i>=1;i--)
+for (i=1;i<100;i++)
 {
 
     T[i]=P[i]*T[i+1]+Q[i];

@@ -68,7 +68,7 @@ C[1]=0;
 }
 
         std::ofstream outfile("BTCS.txt");
-    for (i=M-1;i>=1;i--)
+    for (i=1;i<100;i++)
     {
 
         T[i]=P[i]*T[i+1]+Q[i];
