@@ -12,9 +12,9 @@ double deltaT=c*deltaX*deltaX;//时间步长
 int const M=100;//空间网格数
 int N=t/deltaT;//时间网格数
 double T[M+1],P[M],Q[M],A[M],B[M],C[M],D[M];
-int j,i;//初始化
+int j,i;
 
-for(i=1;i<M;i++)
+for(i=1;i<M;i++)//初始化
 {
     if(i*deltaX<0.3)
     {
