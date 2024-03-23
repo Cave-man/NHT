@@ -13,8 +13,8 @@ int const M=100;//空间网格数
 int N=t/deltaT;//时间网格数
 double T[M+1],P[M],Q[M],A[M],B[M],C[M],D[M];
 int j,i;
-
-for(i=1;i<M;i++)//初始化
+//初始化
+for(i=1;i<M;i++)
 {
     if(i*deltaX<0.3)
     {
@@ -31,9 +31,8 @@ for(i=1;i<M;i++)//初始化
         T[0]=0;
         T[M]=0;
     }
-        //节点差分
-
-    for(j=0;j<=N+1;j++)
+//节点差分
+for(j=0;j<=N+1;j++)
     {
         T[0]=0;
         T[M]=0;
@@ -57,16 +56,21 @@ for(i=2;i<=M-2;i++)
 {
     D[i]=T[i+1]+(2/c-2)*T[i]+T[i-1];
 }
-D[1]=T[2]+(2/c-2)*T[1]+T[0]+c*0;
-D[M-1]=T[M]+(2/c-2)*T[M-1]+T[M-2]+c*0;
-P[1]=B[1]/A[1];
-Q[1]=D[1]/A[1];
+
+//边界条件
+    D[1]=T[2]+(2/c-2)*T[1]+T[0]+c*0;
+    D[M-1]=T[M]+(2/c-2)*T[M-1]+T[M-2]+c*0;
+    P[1]=B[1]/A[1];
+    Q[1]=D[1]/A[1];
+
+//Thomas算法
 for(i=2;i<=M-1;i++)
 {
     P[i]=B[i]/(A[i]-C[i]*P[i-1]);
     Q[i]=(D[i]+C[i]*Q[i-1])/(A[i]-C[i]*P[i-1]);
 }
 
+//输出
 std::ofstream outfile("CNCS.txt");
 for (i=1;i<100;i++)
 {
