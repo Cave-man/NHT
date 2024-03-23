@@ -57,8 +57,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Cave_man/Desktop/NHT/NHT-SIGMA-1.0/BTCS",
-      "program": "c:/Users/Cave_man/Desktop/NHT/NHT-SIGMA-1.0/BTCS/build/Debug/outDebug",
+      "cwd": "c:/Users/Cave_man/Desktop/NHT/NHT-SIGMA-0.1/CNCS",
+      "program": "c:/Users/Cave_man/Desktop/NHT/NHT-SIGMA-0.1/CNCS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
